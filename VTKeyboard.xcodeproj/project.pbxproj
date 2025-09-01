@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D53E88402E62ED4F00D49E06 /* VTKeyboardExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D53E88392E62ED4F00D49E06 /* VTKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D53E88482E62F00F00D49E06 /* SharedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E88472E62EDD300D49E06 /* SharedKeys.swift */; };
+		D53E88492E62F00F00D49E06 /* SharedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E88472E62EDD300D49E06 /* SharedKeys.swift */; };
+		D53E884A2E62F00F00D49E06 /* SharedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E88472E62EDD300D49E06 /* SharedKeys.swift */; };
+		D53E884B2E62F00F00D49E06 /* SharedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E88472E62EDD300D49E06 /* SharedKeys.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D53E87DC2E62DFD200D49E06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +29,60 @@
 			remoteGlobalIDString = D53E87CD2E62DFD100D49E06;
 			remoteInfo = VTKeyboard;
 		};
+		D53E883E2E62ED4F00D49E06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D53E87C62E62DFD100D49E06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D53E88382E62ED4F00D49E06;
+			remoteInfo = VTKeyboardExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D53E88452E62ED4F00D49E06 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D53E88402E62ED4F00D49E06 /* VTKeyboardExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D53E87CE2E62DFD100D49E06 /* VTKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53E87DB2E62DFD200D49E06 /* VTKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VTKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53E87E52E62DFD200D49E06 /* VTKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VTKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53E88392E62ED4F00D49E06 /* VTKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VTKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53E88472E62EDD300D49E06 /* SharedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D53E88412E62ED4F00D49E06 /* Exceptions for "VTKeyboardExtension" folder in "VTKeyboardExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D53E88382E62ED4F00D49E06 /* VTKeyboardExtension */;
+		};
+		D53E884F2E62F4A900D49E06 /* Exceptions for "VTKeyboard" folder in "VTKeyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D53E87CD2E62DFD100D49E06 /* VTKeyboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D53E87D02E62DFD100D49E06 /* VTKeyboard */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D53E884F2E62F4A900D49E06 /* Exceptions for "VTKeyboard" folder in "VTKeyboard" target */,
+			);
 			path = VTKeyboard;
 			sourceTree = "<group>";
 		};
@@ -43,6 +94,14 @@
 		D53E87E82E62DFD200D49E06 /* VTKeyboardUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VTKeyboardUITests;
+			sourceTree = "<group>";
+		};
+		D53E883A2E62ED4F00D49E06 /* VTKeyboardExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D53E88412E62ED4F00D49E06 /* Exceptions for "VTKeyboardExtension" folder in "VTKeyboardExtension" target */,
+			);
+			path = VTKeyboardExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +128,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D53E88362E62ED4F00D49E06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D53E87C52E62DFD100D49E06 = {
 			isa = PBXGroup;
 			children = (
+				D53E88462E62EDA600D49E06 /* Shared */,
 				D53E87D02E62DFD100D49E06 /* VTKeyboard */,
 				D53E87DE2E62DFD200D49E06 /* VTKeyboardTests */,
 				D53E87E82E62DFD200D49E06 /* VTKeyboardUITests */,
+				D53E883A2E62ED4F00D49E06 /* VTKeyboardExtension */,
 				D53E87CF2E62DFD100D49E06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +156,17 @@
 				D53E87CE2E62DFD100D49E06 /* VTKeyboard.app */,
 				D53E87DB2E62DFD200D49E06 /* VTKeyboardTests.xctest */,
 				D53E87E52E62DFD200D49E06 /* VTKeyboardUITests.xctest */,
+				D53E88392E62ED4F00D49E06 /* VTKeyboardExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D53E88462E62EDA600D49E06 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D53E88472E62EDD300D49E06 /* SharedKeys.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +179,12 @@
 				D53E87CA2E62DFD100D49E06 /* Sources */,
 				D53E87CB2E62DFD100D49E06 /* Frameworks */,
 				D53E87CC2E62DFD100D49E06 /* Resources */,
+				D53E88452E62ED4F00D49E06 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D53E883F2E62ED4F00D49E06 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D53E87D02E62DFD100D49E06 /* VTKeyboard */,
@@ -163,6 +242,28 @@
 			productReference = D53E87E52E62DFD200D49E06 /* VTKeyboardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D53E88382E62ED4F00D49E06 /* VTKeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D53E88422E62ED4F00D49E06 /* Build configuration list for PBXNativeTarget "VTKeyboardExtension" */;
+			buildPhases = (
+				D53E88352E62ED4F00D49E06 /* Sources */,
+				D53E88362E62ED4F00D49E06 /* Frameworks */,
+				D53E88372E62ED4F00D49E06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D53E883A2E62ED4F00D49E06 /* VTKeyboardExtension */,
+			);
+			name = VTKeyboardExtension;
+			packageProductDependencies = (
+			);
+			productName = VTKeyboardExtension;
+			productReference = D53E88392E62ED4F00D49E06 /* VTKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +285,9 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = D53E87CD2E62DFD100D49E06;
 					};
+					D53E88382E62ED4F00D49E06 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = D53E87C92E62DFD100D49E06 /* Build configuration list for PBXProject "VTKeyboard" */;
@@ -203,6 +307,7 @@
 				D53E87CD2E62DFD100D49E06 /* VTKeyboard */,
 				D53E87DA2E62DFD200D49E06 /* VTKeyboardTests */,
 				D53E87E42E62DFD200D49E06 /* VTKeyboardUITests */,
+				D53E88382E62ED4F00D49E06 /* VTKeyboardExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +334,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D53E88372E62ED4F00D49E06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -236,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53E88482E62F00F00D49E06 /* SharedKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53E88492E62F00F00D49E06 /* SharedKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53E884A2E62F00F00D49E06 /* SharedKeys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53E88352E62ED4F00D49E06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53E884B2E62F00F00D49E06 /* SharedKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +388,11 @@
 			isa = PBXTargetDependency;
 			target = D53E87CD2E62DFD100D49E06 /* VTKeyboard */;
 			targetProxy = D53E87E62E62DFD200D49E06 /* PBXContainerItemProxy */;
+		};
+		D53E883F2E62ED4F00D49E06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D53E88382E62ED4F00D49E06 /* VTKeyboardExtension */;
+			targetProxy = D53E883E2E62ED4F00D49E06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,11 +523,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VTKeyboard/VTKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ACG93K4C9J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VTKeyboard/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record audio to transcribe into text for the keyboard.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,11 +554,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VTKeyboard/VTKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ACG93K4C9J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VTKeyboard/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record audio to transcribe into text for the keyboard.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -518,6 +652,58 @@
 			};
 			name = Release;
 		};
+		D53E88432E62ED4F00D49E06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VTKeyboardExtension/VTKeyboardExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ACG93K4C9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VTKeyboardExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VTKeyboardExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandeepan.VTTKeyboard.VTKeyboard.VTKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D53E88442E62ED4F00D49E06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VTKeyboardExtension/VTKeyboardExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ACG93K4C9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VTKeyboardExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VTKeyboardExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandeepan.VTTKeyboard.VTKeyboard.VTKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +739,15 @@
 			buildConfigurations = (
 				D53E87F62E62DFD200D49E06 /* Debug */,
 				D53E87F72E62DFD200D49E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53E88422E62ED4F00D49E06 /* Build configuration list for PBXNativeTarget "VTKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53E88432E62ED4F00D49E06 /* Debug */,
+				D53E88442E62ED4F00D49E06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

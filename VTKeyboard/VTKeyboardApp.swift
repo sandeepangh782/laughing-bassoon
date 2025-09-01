@@ -1,17 +1,14 @@
-//
-//  VTKeyboardApp.swift
-//  VTKeyboard
-//
-//  Created by sandeepan ghosh on 30/08/25.
-//
-
 import SwiftUI
 
 @main
 struct VTKeyboardApp: App {
+
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecordView() // your main recording screen
         }
     }
 }
+
